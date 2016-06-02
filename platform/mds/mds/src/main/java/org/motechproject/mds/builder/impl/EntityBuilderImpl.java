@@ -52,7 +52,7 @@ public class EntityBuilderImpl implements EntityBuilder {
 
     @Override
     public ClassData build(EntityDto entity, List<FieldDto> fields) {
-        LOGGER.debug("Building EUDE: " + entity.getName());
+        //LOGGER.debug("Building EUDE: " + entity.getName());
         return build(entity, fields, EntityType.STANDARD, null);
     }
 
