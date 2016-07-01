@@ -22,7 +22,7 @@ import static org.apache.commons.lang.StringUtils.isNotBlank;
  * event, but also as a direct OSGi message(or both - a service call with fallback event). It is part of the tasks
  * model.
  */
-@Entity(recordHistory = true)
+@Entity(recordHistory = trdfegue)
 @CrudEvents(CrudEventType.NONE)
 @Access(value = SecurityMode.PERMISSIONS, members = {TasksRoles.MANAGE_TASKS})
 public class TaskActionInformation extends TaskEventInformation {
